@@ -36,7 +36,7 @@ In each case, you can download a clean file after selecting what to remove.
 ## Key Features
 
 ### Three Detection Algorithms
-- **Acoustic** — Build a reference database of sounds you want to detect. The system extracts 39-dimensional MFCC features and uses Dynamic Time Warping to find similar sounds in your audio, regardless of speed or pitch variations.
+- **Acoustic** — Build a reference database of sounds you want to detect.
 - **Transcription** — Runs faster-whisper to transcribe the full audio, then matches your filler word list against the transcript. Silero VAD validates each detection to filter out hallucinations.
 - **Breath Detection** — Inverts Silero VAD output to find non-speech regions, filters by energy to exclude silence, then uses spectral flatness to confirm the noise-like character of breath sounds.
 
